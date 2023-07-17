@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "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"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "6197392459:AAEP_KMZNzDgV8FsDJoMQ1y2XPYKsvdP-s0"
+    tgkey = "6371180754:AAFNJgt2rw_avGVAAvYjVUY-XvwzoDlHXPc"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -292,6 +292,4 @@ def interact(bot, update, botname, username, new):
             update.message.reply_text(errstr)
 
 
-def error(bot, update):
-    """Log Errors caused by Updates."""
-    logger.warning('Update' "%s" caused error "%s")
+
